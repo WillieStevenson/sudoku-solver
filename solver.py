@@ -13,7 +13,6 @@ def read_puzzle(filename):
 
 	with open(filename) as f:
 		while True:
-			
 			c = f.read(1)
 
 			if not c:
@@ -27,7 +26,6 @@ def read_puzzle(filename):
 	return tempBase
 
 def print_puzzle(filename, array):
-
 	print "\n--", filename, "--\n"
 
 	for i in range(9):
@@ -42,7 +40,6 @@ def print_puzzle(filename, array):
 	print "+-------+-------+-------+"	
 
 def verify(grid, index_i, index_j, val):
-
 	# verify row and column by building the row and column list based 
 	# on the passed indicie if the count of value at indicie is more
 	# or than 0, return false sum should always 0 or higher
@@ -81,7 +78,6 @@ def solve(index_i, index_j, grid):
 			return True
 	if grid[index_i][index_j] != ' ':
 		return solve(index_i+1, index_j, grid)
-
 	for val in range(1, 10):
 		if verify(grid, index_i, index_j, str(val)):
 			grid[index_i][index_j] = str(val)
