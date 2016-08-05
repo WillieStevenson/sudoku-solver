@@ -1,4 +1,8 @@
-# Sudoku Solver
+###
+## Author: Willie Stevenson
+## Sudoku Solver
+## An under 100 line sudoku solver in Python that utilizes the recursive backtracking algorithm to solve sudoku puzzles.
+###
 
 from collections import Counter
 
