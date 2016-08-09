@@ -1,10 +1,11 @@
 ###
 ## Author: Willie Stevenson
 ## Sudoku Solver
-## An under 100 line sudoku solver in Python that utilizes the recursive backtracking algorithm to solve sudoku puzzles.
+## A sub-100 line sudoku solver in Python that utilizes the recursive backtracking algorithm to solve sudoku puzzles.
 ###
 
 from collections import Counter
+import time
 
 def read_puzzle(filename):
 	# read in puzzle
@@ -91,8 +92,12 @@ def solve(index_i, index_j, grid):
 def do_puzzle_main(filename):
 	grid = read_puzzle(filename)
 	print_puzzle(filename + ' - start', grid)
+	start_time = time.clock()
 	solve(0, 0, grid)
-	print_puzzle(filename + ' - finish', grid)
+	finish_time = round(time.clock() - start_time, 2)
+	print_puzzle(filename + ' - finish: ' + str(finish_time) + ' seconds' , grid)
 
 ##############################################
-do_puzzle_main('puzzle-example1.txt')
+do_puzzle_main('puzzle-example-E.txt')
+do_puzzle_main('puzzle-example-H.txt')
+
