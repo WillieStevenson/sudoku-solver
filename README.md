@@ -9,13 +9,10 @@ I wrote this script for the purpose of writing and experimenting with the recurs
 2. Link either a newly created puzzle or just run the default one.
 3. Run `$ python solver.py` or write puzzle solution(s) to a file with `$ python solver.py > run-01`.
 
+## Screenshot
+
+![alt text](screen-shot-01.png "solving puzzles")
+
 ## Other
 
-* Has solved puzzles like Arto Inkala's proclaimed world's hardest. 
-* Other honorable mentions are unsolvable #28 and unsolvable #49.
-
-
-## To Do
-
-* More testing
-* List max recusion depth value
+* Has solved puzzles like Arto Inkala's proclaimed world's hardest and others like unsolvable #28 and unsolvable #49.

@@ -98,6 +98,6 @@ def do_puzzle_main(filename):
 	print_puzzle(filename + ' - finish: ' + str(finish_time) + ' seconds' , grid)
 
 ##############################################
-do_puzzle_main('puzzle-example-E.txt')
-do_puzzle_main('puzzle-example-H.txt')
+do_puzzle_main('puzzle1.txt')
+# do_puzzle_main('puzzle-example-H.txt')
 
